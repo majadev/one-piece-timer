@@ -5,7 +5,6 @@ export default function Home() {
     <main className="min-h-screen w-full bg-gradient-to-br from-[#0e0716] via-[#160b24] to-[#07030b] text-white flex items-center justify-center p-6">
       <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-between gap-12">
 
-        {/* Vänster sektion: Rubrik & Startknapp */}
         <section className="flex flex-col items-center justify-center flex-1 space-y-8 relative">
           {/* HELP COMPONENT HERE */}
           <div className="absolute -top-12 left-0">
@@ -31,7 +30,7 @@ export default function Home() {
           </button>
         </section>
 
-        {/* Höger sektion: Match Configuration Card */}
+        {/* Match Configuration Card */}
         <MatchConfig />
 
       </div>
