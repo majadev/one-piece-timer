@@ -2,21 +2,21 @@ import MatchConfig from "@/components/home/MatchConfig.tsx";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full bg-gradient-to-br from-[#0e0716] via-[#160b24] to-[#07030b] text-white flex items-center justify-center p-6">
-      <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-between gap-12">
+    <main className="min-h-screen w-full bg-linear-to-br from-[#0e0716] via-[#160b24] to-[#07030b] text-white flex flex-col justify-center items-center p-6">
+      {/* Ta bort items-center och sätt items-stretch så barnen får samma höjd */}
+      <div className="parent w-full max-w-5xl flex flex-col md:flex-row items-stretch justify-between gap-12">
 
-        <section className="flex flex-col items-center justify-center flex-1 space-y-8 relative">
+        <section className="child flex flex-col justify-between flex-1 space-y-8 relative">
           {/* HELP COMPONENT HERE */}
-          <div className="absolute -top-12 left-0">
-            {/* <HelpButton /> */}
+          <div>
             ?
           </div>
 
-          <div className="text-center space-y-2">
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-wider">
+          <div className="text-left space-y-2">
+            <h1 className="text-xl md:text-4xl font-extrabold tracking-wider">
               ONE PIECE
             </h1>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-wider">
+            <h1 className="text-xl md:text-4xl font-extrabold tracking-wider">
               TIMER
             </h1>
             <p className="text-xs tracking-widest text-gray-400 mt-2">
